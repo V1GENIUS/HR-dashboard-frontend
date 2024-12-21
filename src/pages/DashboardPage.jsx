@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import Sidebar from '../components/Sidebar';
 import { FiSearch } from "react-icons/fi";
@@ -10,7 +10,7 @@ import { createCandidate, getCandidates } from '../services/candidateService'; /
 
 const DashboardPage = () => {
   const [candidates, setCandidates] = useState([]);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [status, setStatus] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [newCandidate, setNewCandidate] = useState({
@@ -31,11 +31,11 @@ const DashboardPage = () => {
     fetchCandidates();
   }, []); 
 
-  const handleLogout = () => {
+  // const handleLogout = () => {
     
-    console.log("Logged out");
-    navigate("/");
-  };
+  //   console.log("Logged out");
+  //   navigate("/");
+  // };
 
  
 
@@ -83,7 +83,7 @@ const DashboardPage = () => {
 
       
       if (newStatus === "Selected") {
-        const selectedCandidate = updatedCandidates.find(candidate => candidate._id === id);
+        // const selectedCandidate = updatedCandidates.find(candidate => candidate._id === id);
         
         // navigate("/employees", { state: { selectedCandidate } });
       }
