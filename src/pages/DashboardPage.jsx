@@ -73,7 +73,7 @@ const DashboardPage = () => {
       }));
 
       
-      await axios.put(`http://localhost:5000/api/candidates/${id}`, { status: newStatus }, {
+      await axios.put(`https://hr-dashboard-backend.onrender.com/api/candidates/${id}`, { status: newStatus }, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       });
 

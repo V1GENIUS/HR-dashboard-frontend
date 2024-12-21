@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const API_URL = 'http://localhost:5000/api/candidates';
+const API_URL = 'https://hr-dashboard-backend.onrender.com/api/candidates';
 
 export const getCandidates = async () => {
   const response = await axios.get(API_URL, {
@@ -19,7 +19,7 @@ export const createCandidate = async (candidateData) => {
   formData.append("experience", candidateData.experience);
   formData.append("resume", candidateData.resume);
 
-  const response = await axios.post('http://localhost:5000/api/candidates/add', formData, {
+  const response = await axios.post('https://hr-dashboard-backend.onrender.com/api/candidates/add', formData, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem('token')}`,
       'Content-Type': 'multipart/form-data',
