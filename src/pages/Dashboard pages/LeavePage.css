@@ -1,0 +1,173 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .leave-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+ 
+  .sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-menu p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .sidebar-menu li.active {
+    background-color: #6c47ff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+ 
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-icon {
+    font-size: 22px;
+    color: #888;
+  }
+  
+  .header-right input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .icon {
+    font-size: 25px;
+    color: #888;
+    cursor: pointer;
+  }
+  
+ 
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .actions select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .add-leave-btn {
+    padding: 8px 15px;
+    background-color: purple;
+    color: white;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+ 
+  .leave-section {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .applied-leaves {
+    flex: 2;
+  }
+  
+  .applied-leaves table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .applied-leaves thead th {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+  }
+  
+  .applied-leaves tbody tr {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .applied-leaves td {
+    padding: 10px;
+  }
+  
+  .role {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .status {
+    font-weight: bold;
+  }
+  
+  .leave-calendar {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .leave-calendar .calendar-item {
+    margin-bottom: 10px;
+  }
+  
+  .calendar-item .date {
+    font-weight: bold;
+  }
+  
+  .calendar-item .name {
+    color: #6c47ff;
+  }
+  
+  .calendar-item .role {
+    font-size: 12px;
+    color: #888;
+  }
+  
